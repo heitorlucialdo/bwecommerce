@@ -1,4 +1,6 @@
 /* hifi-landing.jsx — Landing (direction C: Gallery / Magazine) hi-fi. */
+import React from 'react';
+import { useNav, WA_URL, BENEFITS, CATEGORIES, PRODUCTS, Reveal, Ph, Icon, Stars, ProductCard } from './hifi-shared';
 
 const VALUES = [
   ["Qualidade Premium", "Materiais certificados, seguros e de alto padrão, selecionados sem concessões."],
@@ -314,4 +316,4 @@ function LandingPage() {
   );
 }
 
-Object.assign(window, { LandingPage });
+export default LandingPage;

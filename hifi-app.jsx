@@ -1,4 +1,13 @@
 /* hifi-app.jsx — router, cart provider, theme + Tweaks. */
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './hifi.css';
+import { useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakSelect, TweakToggle, TweakText, TweakButton } from './tweaks-panel';
+import { Nav, Cart, Navbar, Footer, WhatsApp, CartDrawer } from './hifi-shared';
+import LandingPage from './hifi-landing';
+import ProductPage from './hifi-product';
+import PhilosophyPage from './hifi-philosophy';
+import CollectionPage from './hifi-collection';
 
 const HIFI_TWEAKS = /*EDITMODE-BEGIN*/{
   "accent": "mono",
@@ -88,12 +97,12 @@ function App() {
       <Cart.Provider value={cart}>
         <Navbar />
         {route.view === "product"
-          ? <window.ProductPage slug={route.slug} />
+          ? <ProductPage slug={route.slug} />
           : route.view === "filosofia"
-          ? <window.PhilosophyPage videoUrl={t.philoVideo} />
+          ? <PhilosophyPage videoUrl={t.philoVideo} />
           : route.view === "colecao"
-          ? <window.CollectionPage categorySlug={route.slug} />
-          : <window.LandingPage />}
+          ? <CollectionPage categorySlug={route.slug} />
+          : <LandingPage />}
         <Footer />
         <WhatsApp />
         <CartDrawer />

@@ -1,4 +1,6 @@
 /* hifi-collection.jsx — catálogo completo e por categoria. */
+import React from 'react';
+import { useNav, categoryMetaFromSlug, productsInCategory, PRODUCTS, Reveal, Icon, ProductCard } from './hifi-shared';
 
 function CollectionPage({ categorySlug }) {
   const { go } = useNav();
@@ -46,4 +48,4 @@ function CollectionPage({ categorySlug }) {
   );
 }
 
-Object.assign(window, { CollectionPage });
+export default CollectionPage;

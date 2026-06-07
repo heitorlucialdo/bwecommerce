@@ -1,4 +1,5 @@
-/* hifi-shared.jsx — data, primitives, chrome, cart drawer. Exports to window. */
+/* hifi-shared.jsx — data, primitives, chrome, cart drawer. */
+import React from 'react';
 
 /* ---- data ------------------------------------------------------------- */
 const PRODUCTS = [
@@ -320,9 +321,9 @@ function CartDrawer() {
   );
 }
 
-Object.assign(window, {
+export {
   PRODUCTS, PRODUCT_BY_SLUG, CATEGORIES, BENEFITS, NAV_LINKS, MENU_CATEGORIES,
   productsInCategory, categoryMetaFromSlug, BRL, WA_URL, WA_PHONE, buildWACartLink, buildWASingleLink,
   Nav, Cart, useNav, useCart, Reveal, Ph, Icon, Stars,
   Navbar, Footer, WhatsApp, ProductCard, CartDrawer,
-});
+};

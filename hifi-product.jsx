@@ -1,4 +1,6 @@
 /* hifi-product.jsx — product page template (works for any product). */
+import React from 'react';
+import { useNav, useCart, BRL, PRODUCTS, PRODUCT_BY_SLUG, buildWASingleLink, Reveal, Ph, Icon, Stars, ProductCard } from './hifi-shared';
 
 const SPECS = [
   ["Material", "Silicone médico certificado"],
@@ -216,4 +218,4 @@ function ProductPage({ slug }) {
   );
 }
 
-Object.assign(window, { ProductPage });
+export default ProductPage;

@@ -1,3 +1,6 @@
+import React from 'react';
+import { Reveal } from './hifi-shared';
+
 /* hifi-philosophy.jsx — "Nossa Filosofia" page.
    Hero = animated video stage (CSS-animated placeholder now; plays a real
    <video> once a URL is provided via Tweaks → t.philoVideo). All body copy
@@ -111,4 +114,4 @@ function PhilosophyPage() {
   );
 }
 
-Object.assign(window, { PhilosophyPage });
+export default PhilosophyPage;
