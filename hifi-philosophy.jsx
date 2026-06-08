@@ -24,7 +24,7 @@ function VideoStage() {
       {/* Mobile: vídeo de fundo */}
       <video
         className="stage-media-video"
-        src="../assets/videochampage.mp4"
+        src="/assets/videochampage.mp4"
         autoPlay
         muted
         loop

@@ -3,13 +3,13 @@ import React from 'react';
 
 /* ---- data ------------------------------------------------------------- */
 const PRODUCTS = [
-  { slug: "sugador-pro", name: "Sugador Pro", price: 749, cat: "Vibradores", img: "assets/sugador-pro.jpg" },
-  { slug: "sugador", name: "Sugador", price: 549, cat: "Vibradores", img: "assets/sugador.jpg" },
-  { slug: "rosa-velvet", name: "Rosa Velvet", price: 459, cat: "Vibradores", img: "assets/rosa-velvet.jpg" },
-  { slug: "golfinho", name: "Golfinho", price: 329, cat: "Vibradores", img: "assets/golfinho.jpg" },
-  { slug: "egg", name: "Egg", price: 229, cat: "Acessórios", img: "assets/egg.jpg" },
-  { slug: "bullet", name: "Bullet", price: 189, cat: "Vibradores", img: "assets/bullet.jpg" },
-  { slug: "sedenta-hot", name: "Sedenta Hot", price: 129, cat: "Cosméticos", img: "assets/sedenta-hot.jpg" },
+  { slug: "sugador-pro", name: "Sugador Pro", price: 749, cat: "Vibradores", img: "/assets/sugador-pro.jpg" },
+  { slug: "sugador", name: "Sugador", price: 549, cat: "Vibradores", img: "/assets/sugador.jpg" },
+  { slug: "rosa-velvet", name: "Rosa Velvet", price: 459, cat: "Vibradores", img: "/assets/rosa-velvet.jpg" },
+  { slug: "golfinho", name: "Golfinho", price: 329, cat: "Vibradores", img: "/assets/golfinho.jpg" },
+  { slug: "egg", name: "Egg", price: 229, cat: "Acessórios", img: "/assets/egg.jpg" },
+  { slug: "bullet", name: "Bullet", price: 189, cat: "Vibradores", img: "/assets/bullet.jpg" },
+  { slug: "sedenta-hot", name: "Sedenta Hot", price: 129, cat: "Cosméticos", img: "/assets/sedenta-hot.jpg" },
 ];
 const PRODUCT_BY_SLUG = Object.fromEntries(PRODUCTS.map((p) => [p.slug, p]));
 
@@ -30,10 +30,10 @@ function categoryMetaFromSlug(slug) {
 }
 
 const CATEGORIES = [
-  { name: "Vibradores", slug: "vibradores", count: "5 produtos", img: "assets/foto_vibradores.jpg" },
-  { name: "Kits", slug: "kits", count: "Em breve", img: "assets/kitis.jpg" },
-  { name: "Cosméticos Íntimos", slug: "cosmeticos", count: "1 produto", img: "assets/comesticos.jpg" },
-  { name: "Acessórios", slug: "acessorios", count: "1 produto", img: "assets/acessorios.jpg" },
+  { name: "Vibradores", slug: "vibradores", count: "5 produtos", img: "/assets/foto_vibradores.jpg" },
+  { name: "Kits", slug: "kits", count: "Em breve", img: "/assets/kitis.jpg" },
+  { name: "Cosméticos Íntimos", slug: "cosmeticos", count: "1 produto", img: "/assets/comesticos.jpg" },
+  { name: "Acessórios", slug: "acessorios", count: "1 produto", img: "/assets/acessorios.jpg" },
 ];
 
 const BENEFITS = [

@@ -203,7 +203,7 @@ function Sobre() {
                 <video
                   ref={videoRef}
                   className="sobre-video"
-                  src="assets/sugadorVideosPagina.mp4"
+                  src="/assets/sugadorVideosPagina.mp4"
                   muted
                   loop
                   playsInline
