@@ -46,7 +46,7 @@ const BENEFITS = [
 const NAV_LINKS = ["Coleção", "Kits", "Cosméticos", "Acessórios", "Sobre"];
 
 const BRL = (n) => "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const WA_PHONE = "5565996490705"; // substitua pelo número real com DDI
+const WA_PHONE = "5565999056181";
 const WA_URL = `https://wa.me/${WA_PHONE}`;
 
 function buildWACartLink(items) {
